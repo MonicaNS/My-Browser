@@ -27,10 +27,10 @@ public class ActivityLoaderActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.browserBtn:
-                Uri webpage = Uri.parse("http://www.amazon.com");
+                Uri webpage = Uri.parse("http://www.youtube.com");
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(Intent.createChooser((webIntent), "Choose"));
-                startActivity(webIntent);
+                startActivity(Intent.createChooser((webIntent), "choose"));
+//                startActivity(webIntent);
                 break;
 
             case R.id.callBtn:
