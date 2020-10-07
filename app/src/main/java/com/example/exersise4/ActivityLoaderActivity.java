@@ -27,9 +27,17 @@ public class ActivityLoaderActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.browserBtn:
-                Uri webpage = Uri.parse("http://www.youtube.com");
+                Uri webpage = Uri.parse("http://www.amazon.com");
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-                startActivity(Intent.createChooser((webIntent), "choose"));
+//                String title = getResources().getString(R.string.chooser_title);
+                startActivity(Intent.createChooser(webIntent, "choose"));
+
+                // Verify the intent will resolve to at least one activity
+//                if (webIntent.resolveActivity(getPackageManager()) != null) {
+//                    Intent chooser = Intent.createChooser(webIntent, "choose");
+//                    startActivity(chooser);
+//                }
+
 //                startActivity(webIntent);
                 break;
 
