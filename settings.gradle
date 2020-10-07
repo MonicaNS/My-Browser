@@ -1,0 +1,4 @@
+include ':mybrowser2'
+include ':app:mybrowser'
+include ':app'
+rootProject.name = "Exersise4"
